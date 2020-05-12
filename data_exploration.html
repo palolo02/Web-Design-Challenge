@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Project 1</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        
+    </head>
+    <body>
+        <div class="container">
+            <!-- menu -->
+            <div class="row">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                    <div class="collapse navbar-collapse" id="navbarColor01">
+                      <ul class="navbar-nav mr-auto">
+                        <li class="nav-item ">
+                          <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="hypothesis.html">Hypothesis</a>
+                        </li>
+                        <li class="nav-item ">
+                          <a class="nav-link" href="data_sources.html">Data Sources</a>
+                        </li>
+                        <li class="nav-item ">
+                          <a class="nav-link" href="cleanup.html">Clean Up Process</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Data Exploration <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Data Analysis</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Conclusions</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
+
+            </div>
+            <!-- content -->
+            <div class="col">
+                <div class="row">
+                    <h1>Data Exploration</h1>
+                    <p>As every dataset hides a lot of ways to tell what is happening, the gun data file is no exception. From the beginning we observed that there are general patterns were we can start making assumptions of what is happening, how the data is related to itself, how we can see it from another perspective and lastly, how we can learn from it.
+                        Let's have a look at what we have
+                    </p>
+                </div>
+                <div class="row">
+                    <h2>1. Gun Data (csv)</h2>
+                    <h3>Challenges:</h3>
+                    <ol>
+                        <li>Large datafile (> 200K rows)</li>
+                        <li>Memory consumption</li>
+                        <li>Web scrapping files (fields with || or :: patterns)</li>
+                        <li>Information with missing values</li>
+                        <li>Save/Load pickle files (optimize data loading)</li>
+                    </ol>                    
+                </div>
+                <div class="row">
+                    <h3>Approach</h3>
+                    <ol>
+                        <li>Chunk size to optimize loading requests in large csv file to avoid memory consumption errors.</li>
+                        <li>Manipulate each set of data according to some patterns for each column to build independent dataframes (python definition).</li>
+                        <li>Process and store cleaned dataframes in pickle objects.</li>
+                        <li>Load stored dataframes to facilitate their processing.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
