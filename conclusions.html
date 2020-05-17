@@ -8,7 +8,6 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <link rel="stylesheet" href="WebVisualizations/Resources/styles/style.css">
-        
     </head>
     <body>
         <div class="container">
@@ -36,44 +35,43 @@
                             <li class="nav-item">
                               <a class="nav-link" href="cleanup.html">Clean Up Process</a>
                             </li>
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Data Exploration <span class="sr-only">(current)</span></a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="data_exploration.html">Data Exploration</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="data_analysis.html">Data Analysis</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="conclusions.html">Conclusions</a>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Conclusions <span class="sr-only">(current)</span></a>
                             </li>
                           </ul>
                       </div>
-                    </nav
+                    </nav>
+                  </div>
 
             </div>
             <!-- content -->
             <div class="col">
                 <div class="row">
-                    <h1>Data Exploration</h1>
-                    <p>As every dataset hides a lot of ways to tell what is happening, the gun data file is no exception. From the beginning we observed that there are general patterns were we can start making assumptions of what is happening, how the data is related to itself, how we can see it from another perspective and lastly, how we can learn from it.
-                        Let's have a look at what we have
+                    <h1>Conclusions</h1>
+                </div>
+                <div class="row">
+                    <h2>1. Close-relationships Incidents are deadlier than those in which the victim(s) is/are unknown (like robberies).
+                    </h2>
+                    <p>Violence will always be part of any community. It can be found in different types, but maybe the reason behind why people act in such way can lead us understand why there are more victims in close-relationship issues. This reasoning supports our original statement in which, for example, a conflict within a family can lead to drastic measures as part of a solution. In contrast, a robbery most of the times remains in shuch an action to get you away from your stuff and in a few times it will be an excuse to kill.
                     </p>
                 </div>
                 <div class="row">
-                    <h2>1- Number of incidents per year</h2>
-                    <p>Since neither 2013 nor 2018 contains complete data, we will leave them out of this analysis and focus on data from 2014 - 2017. As we can see from the graph, the ascending trend has happened in the last three years. Now, the questions is, where has this violence happened more frequent?</p>
+                    <h2>2. Southern states (near Mexico) present higher levels of deaths</h2>
                 </div>
                 <div class="row">
-                    <h2>2- Top and bottom 10 violent states according to the number of deaths from 2014-2017</h2>
-                    <p>Since neither 2013 nor 2018 contains complete data, we will leave them out of this analysis and focus on data from 2014 - 2017. As we can see from the graph, the ascending trend has happened in the last three years. Now, the questions is, where has this violence happened more frequent?</p>
+                    <h2>3.- Social and Economic factors shown a correlation inverse but p_value show that this is not a strong correlation.
+                    </h2>
+                    <p>Based on the correlation result between Income and Crime, we can say that there is an inverse relationship between these two variables and Crime. It means when the % Income Increases or % Graduates increases our % Offence per person Decreases (meaning there is a definite, consequential relationship between these two variables). However, our Income and Graduates P- value are 0.17 and 0.82 respectively. It means Our p-value are greater than 0.05 significance level, so we fail to reject the null hypothesis, it indicates that our samples did not provide sufficient evidence to conclude that the effect exists. However, at the same time, that lack of evidence as we said it doesn’t prove that the effect does not exist. In addition to that we observed that the size or the sample plays a big role to test a hypothesis, here we got a small data sample to work with. In order understand this phenomenon we can perform the same exercise using a large amount of data (and granular) that allow us to reject or fail to reject this hypothesis properly.
+                    </p>
                 </div>
                 <div class="row">
-                    <h2>3- What are the most common type of violent incidents in the US?</h2>
-                    <p>According to this information, the graph shows that in just three years (2014 - 2017), Armed Robbery (~39%) has been the most frequent violent incident in the US. However, it's worth noting that family-related issues (17%) and couple relationship (17%) happend more often than those incidents that we thought would be in first place: mass shootings and gang vs gang.</p>
-                </div>
-                <div class="row">
-                    <h2>4- Which is the typical guntype used in those incidents?</h2>
-                    <p>Although there are many 'Unknown' in this dataset, we did not include it as part of this analysis.
-                        Unsurprisingly, a handgun is the first choice for perpetrators to commit a violent act. Over 41% prefers a small gun, presumably, because its usability, portability and permission to use in the US</p>
+                    <h2>Social factor influence crime levels (Pittsbugh)</h2>
                 </div>
             </div>
         </div>

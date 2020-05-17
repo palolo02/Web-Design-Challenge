@@ -3,62 +3,90 @@
     <head>
         <meta charset="UTF-8">
         <title>Project 1</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="WebVisualizations/Resources/styles/style.css">
     </head>
     <body>
-        <div class="container">
-            <!-- menu -->
-            <div class="row">
-                <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-                    <div class="collapse navbar-collapse" id="navbarColor01">
-                      <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="hypothesis.html">Hypothesis</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="data_sources.html">Data Sources</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="cleanup.html">Clean Up Process</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="data_sources.html">Data Exploration</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Data Analysis</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Conclusions</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </nav>
-
-            </div>
-            <!-- content -->
-            <div class="col-6">
-                <div class="row">
-                    <h1>Crime in US</h1>
-                </div>
-                <div class="row">
-                    <p>As we live in a society constantly exposed to violence from several sources of information, social media has played a crucial role in not only sharing violent situations instantaneously, but also in providing more data to get a better understanding of when, how and why those complex problems occured in the past. In US, for instance, incidents involving guns have rapidly increased over the last 5 years. However, we barely know some of the social factors that contribute to these interesting numbers and now we have the possibility to dig further into these conditions and have a fresh perspective that may explain some unhiden patterns that lead to intriguing steps in preventing them to happen more often.
-                    </p>
-                    <br />
-                    <p>In addition, researches have considered and measured Social and Economic factors like income, health, education, family live, housing, progress on industrialization, urbanization, etc. One study showed that those variables are crucial factors that lead a person to commit a crime. While some researches have said that these variables influence rates of crime, others think that this result is not clear. In order to better understand this issue, we are going to analyze the relationship among some of them and find out their impact in crime levels in other cities in the US.</p>
-                    <br />
-                    <p>At the same time, our data analysis will focus on in Pittsburgh PA. From our standpoint, it seems interesting how, from 2014 and 2015, this city radically modified its crime rates. We are going to analyze its levels and rates in population, education, income, house contract, and house value to lead to some conclusions, insights, patterns or trends to explain why this social phenomenon ocurred.</p>
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="row">
-
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <!-- Menu -->
+            <nav class="navbar navbar-expand-md navbar-dark">
+              <!-- Toggler-->
+              <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+                <span class="navbar-toggler-icon"></span>
+              </button>  
+              <div class="collapse navbar-collapse" id="collapse_target">
+                  <a class="navbar-brand"><img class="banner_icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR4Boqt3WyWU6PebsXpKUn_2yFCxTwDrnV0h_WqKdDDADZI9HV3&usqp=CAU"></a>
+                  <ul class="nav navbar-nav">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="hypothesis.html">Hypothesis</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="data_sources.html">Data Sources</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="cleanup.html">Clean Up Process</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="data_exploration.html">Data Exploration</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="data_analysis.html">Data Analysis</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="conclusions.html">Conclusions</a>
+                    </li>
+                  </ul>
+              </div>
+            </nav>
+          </div>
         </div>
+        <div class="row">
+          <div class="col">
+            <h1>Crime in US</h1>
+          </div>
+        </div>
+        <div class="row">
+          <!-- content -->
+          <div class="col-sm-12 col-md-3 col-lg-3">
+              <img class="img_page" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSG5aKIOtFVNluSM5hT6gJ1gLWx9phrY6nbhta3nbPVfsmtirlu&usqp=CAU">
+          </div>
+          <div class="col-sm-12 col-md-9 col-lg-9">
+            <p>As we live in a society constantly exposed to violence from several sources of information, 
+              social media has played a crucial role in not only sharing violent situations instantaneously, 
+              but also in providing more data to get a better understanding of when, how and why those complex 
+              problems occured in the past. In US, for instance, incidents involving guns have rapidly increased 
+              over the last 5 years. However, we barely know some of the social factors that contribute to these 
+              interesting numbers and now we have the possibility to dig further into these conditions and have a 
+              fresh perspective that may explain some unhiden patterns that lead to intriguing steps in preventing 
+              them to happen more often.
+            </p>
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-12">
+            <p>In addition, researches have considered and measured Social and Economic factors like income, 
+              health, education, family live, housing, progress on industrialization, urbanization, etc. 
+              One study showed that those variables are crucial factors that lead a person to commit a crime. 
+              While some researches have said that these variables influence rates of crime, others think that 
+              this result is not clear. In order to better understand this issue, we are going to analyze the 
+              relationship among some of them and find out their impact in crime levels in other cities in the US.
+            </p>
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-12">
+            <p>At the same time, our data analysis will focus on in Pittsburgh PA. From our standpoint, it seems 
+              interesting how, from 2014 and 2015, this city radically modified its crime rates. We are going to 
+              analyze its levels and rates in population, education, income, house contract, and house value to 
+              lead to some conclusions, insights, patterns or trends to explain why this social phenomenon ocurred.
+            </p>
+          </div>
+        </div>
+      </div>
+
     </body>
 </html>
