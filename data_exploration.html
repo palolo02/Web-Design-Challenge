@@ -8,7 +8,6 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <link rel="stylesheet" href="WebVisualizations/Resources/styles/style.css">
-        
     </head>
     <body>
         <div class="container">
@@ -47,33 +46,91 @@
                             </li>
                           </ul>
                       </div>
-                    </nav
-
+                    </nav>
+                </div>
             </div>
-            <!-- content -->
-            <div class="col">
-                <div class="row">
+            <!-- Title -->
+            <div class="row">
+                <div class="col">
                     <h1>Data Exploration</h1>
-                    <p>As every dataset hides a lot of ways to tell what is happening, the gun data file is no exception. From the beginning we observed that there are general patterns were we can start making assumptions of what is happening, how the data is related to itself, how we can see it from another perspective and lastly, how we can learn from it.
+                    <p>As every dataset hides a lot of ways to tell what is happening, the gun data file is no exception. 
+                        From the beginning we observed that there are general patterns were we can start making assumptions 
+                        of what is happening, how the data is related to itself, how we can see it from another perspective 
+                        and lastly, how we can learn from it.
                         Let's have a look at what we have
                     </p>
                 </div>
+            </div>
+            <div>
                 <div class="row">
-                    <h2>1- Number of incidents per year</h2>
-                    <p>Since neither 2013 nor 2018 contains complete data, we will leave them out of this analysis and focus on data from 2014 - 2017. As we can see from the graph, the ascending trend has happened in the last three years. Now, the questions is, where has this violence happened more frequent?</p>
+                    <div class="col">
+                        <h2>1- Number of incidents per year</h2>
+                    </div>
                 </div>
                 <div class="row">
-                    <h2>2- Top and bottom 10 violent states according to the number of deaths from 2014-2017</h2>
-                    <p>Since neither 2013 nor 2018 contains complete data, we will leave them out of this analysis and focus on data from 2014 - 2017. As we can see from the graph, the ascending trend has happened in the last three years. Now, the questions is, where has this violence happened more frequent?</p>
+                    <div class="col">
+                        <img class="img_results" src="WebVisualizations/Images/Crime_in_US/DataExploration_1.png">
+                        <p>Since neither 2013 nor 2018 contains complete data, we will leave them out of this analysis and 
+                            focus on data from 2014 - 2017. As we can see from the graph, the ascending trend has 
+                            happened in the last three years. Now, the questions is, where has this violence 
+                            happened more frequent?</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="row">
+                    <div class="col-12">
+                        <h2>2- Top and bottom 10 violent states according to the number of deaths from 2014-2017</h2>
+                    </div>
                 </div>
                 <div class="row">
-                    <h2>3- What are the most common type of violent incidents in the US?</h2>
-                    <p>According to this information, the graph shows that in just three years (2014 - 2017), Armed Robbery (~39%) has been the most frequent violent incident in the US. However, it's worth noting that family-related issues (17%) and couple relationship (17%) happend more often than those incidents that we thought would be in first place: mass shootings and gang vs gang.</p>
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <img class="img_results" src="WebVisualizations/Images/Crime_in_US/DataExploration_2.png">
+                        <p>Since neither 2013 nor 2018 contains complete data, we will leave them out of this analysis and 
+                            focus on data from 2014 - 2017. As we can see from the graph, the ascending trend has 
+                            happened in the last three years. Now, the questions is, where has this violence 
+                            happened more frequent?</p>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <img class="img_results" src="WebVisualizations/Images/Crime_in_US/DataExploration_3.png">
+                        <p>Since neither 2013 nor 2018 contains complete data, we will leave them out of this analysis and 
+                            focus on data from 2014 - 2017. As we can see from the graph, the ascending trend has 
+                            happened in the last three years. Now, the questions is, where has this violence 
+                            happened more frequent?</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="row">
+                    <div class="col">
+                        <h2>3- What are the most common type of violent incidents in the US?</h2>
+                    </div>
                 </div>
                 <div class="row">
-                    <h2>4- Which is the typical guntype used in those incidents?</h2>
-                    <p>Although there are many 'Unknown' in this dataset, we did not include it as part of this analysis.
-                        Unsurprisingly, a handgun is the first choice for perpetrators to commit a violent act. Over 41% prefers a small gun, presumably, because its usability, portability and permission to use in the US</p>
+                    <div class="col">
+                        <img class="img_results" src="WebVisualizations/Images/Crime_in_US/DataExploration_4.png">
+                        <p>According to this information, the graph shows that in just three years (2014 - 2017), 
+                            Armed Robbery (~39%) has been the most frequent violent incident in the US. However, 
+                            it's worth noting that family-related issues (17%) and couple relationship (17%) happend 
+                            more often than those incidents that we thought would be in first place: mass shootings 
+                            and gang vs gang.</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="row">
+                    <div class="col">
+                        <h2>4- Which is the typical guntype used in those incidents?</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <img class="img_results" src="WebVisualizations/Images/Crime_in_US/DataExploration_5.png">
+                        <p>Although there are many 'Unknown' in this dataset, we did not include it as part of this analysis.
+                            Unsurprisingly, a handgun is the first choice for perpetrators to commit a violent act. 
+                            Over 41% prefers a small gun, presumably, because its usability, portability and permission 
+                            to use in the US</p>
+                    </div>
                 </div>
             </div>
         </div>

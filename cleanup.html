@@ -50,33 +50,34 @@
                   </div>
 
             </div>
-            <!-- content -->
-            <div class="col-6">
-                <div class="row">
-                    <h1>Clean Up Process</h1>
-                    <p>Although the datafiles we used did not represent a big effort in cleanning the data, the current format in which gun_data.csv is found made us work dilligently in retrieving the data in a easy-to-use format. The following challenges and their respective approaches show the steps in accomplishing the final result.
-                    </p>
-                </div>
-                <div class="row">
-                    <h2>1. Gun Data (csv)</h2>
-                    <h3>Challenges:</h3>
-                    <ol>
-                        <li>Large datafile (> 200K rows)</li>
-                        <li>Memory consumption</li>
-                        <li>Web scrapping files (fields with || or :: patterns)</li>
-                        <li>Information with missing values</li>
-                        <li>Save/Load pickle files (optimize data loading)</li>
-                    </ol>                    
-                </div>
-                <div class="row">
-                    <h3>Approach</h3>
+             <!-- Title -->
+             <div class="row">
+              <div class="col">
+                  <h1>Clean Up Process</h1>
+                  <p>Although the datafiles we used did not represent a big effort in cleanning the data, the current format in which gun_data.csv is found made us work dilligently in retrieving the data in a easy-to-use format. The following challenges and their respective approaches show the steps in accomplishing the final result.
+                  </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12 col-md-6 col-lg-6">
+                <h3>Challenges:</h3>
+                <ol>
+                  <li>Large datafile (> 200K rows)</li>
+                  <li>Memory consumption</li>
+                  <li>Web scrapping files (fields with || or :: patterns)</li>
+                  <li>Information with missing values</li>
+                  <li>Save/Load pickle files (optimize data loading)</li>
+                </ol>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-6">
+                <h3>Approach</h3>
                     <ol>
                         <li>Chunk size to optimize loading requests in large csv file to avoid memory consumption errors.</li>
                         <li>Manipulate each set of data according to some patterns for each column to build independent dataframes (python definition).</li>
                         <li>Process and store cleaned dataframes in pickle objects.</li>
                         <li>Load stored dataframes to facilitate their processing.</li>
                     </ol>
-                </div>
+              </div>
             </div>
         </div>
     </body>

@@ -50,38 +50,104 @@
                   </div>
 
             </div>
-            <!-- content -->
+            <!-- Title -->
             <div class="row">
-                <div class="col">
-                    <div class="row">
-                        <h1>Data Analysis</h1>
-                        <p>As every dataset hides a lot of ways to tell what is happening, the gun data file is no exception. From the beginning we observed that there are general patterns were we can start making assumptions of what is happening, how the data is related to itself, how we can see it from another perspective and lastly, how we can learn from it.
-    
-                            Let's have a look at what we have
-                        </p>
-                    </div>
-                    <div class="row">
-                        <h2>1. Correlation between the # of licenses and gun crimes</h2>
-                        <p>On this graph we can appreciate that the countries with the largest number of licenses are not necessarily the most violent. This is a consequence of stronger gun regulation laws like in New York and California that also are the most populated states.</p>
-                        <p>After considering the deadliest type of incidents, we wanted to look at the same relationshp but this time by only cosidering the numer of injured we can find in those moments. Unsurprisingly, we noticed a bigger distribution in armed robberies. A reason that may explain this behavior could be the purpose. According to some information, during robberies, perpetrators only want to get away this other's belongins, not actually kille them (unless they do not have any other option), which is contrary to what we can find in close relationships.</p>
-                    </div>
-                    <div class="row">
-                        <h2>4. Southern states (near Mexico) present higher deaths than other locations in US</h2>
-                        <p>Here, we observe where those incidents happened in the US. At first sight, there is concentration of violence in south east states, a zone that is not really close to mexican border. As we are thinking that souternwest states have more levels of violence, let's split the incidents in those fours cuadrants and see the results.</p>
-                        <p>The results show something different from what we expected. According to the graph, the deadliest zone in three years has been southeast and in second place comes northeast. Referring to our hypothesis, we can say that the closer we get to Mexico does not imply a hiher level of deaths in those states. At this point, we can remember that states such as District of Columbia or Lussiana are among the top 5 more violent states and they are situated in the southeast cuadrant, making more sense of the data.</p>
-                    </div>
-                    <div class="row">
-                        <h2>3- What are the most common type of violent incidents in the US?</h2>
-                        <p>According to this information, the graph shows that in just three years (2014 - 2017), Armed Robbery (~39%) has been the most frequent violent incident in the US. However, it's worth noting that family-related issues (17%) and couple relationship (17%) happend more often than those incidents that we thought would be in first place: mass shootings and gang vs gang.</p>
-                    </div>
-                    <div class="row">
-                        <h2>4- Which is the typical guntype used in those incidents?</h2>
-                        <p>Although there are many 'Unknown' in this dataset, we did not include it as part of this analysis.
-                            Unsurprisingly, a handgun is the first choice for perpetrators to commit a violent act. Over 41% prefers a small gun, presumably, because its usability, portability and permission to use in the US</p>
-                    </div>
-                </div>
+              <div class="col">
+                <h1>Data Analysis</h1>
+                <p>As every dataset hides a lot of ways to tell what is happening, the gun data file is 
+                  no exception. From the beginning we observed that there are general patterns were we 
+                  can start making assumptions of what is happening, how the data is related to itself, 
+                  how we can see it from another perspective and lastly, how we can learn from it.
+                  Let's have a look at what we have
+                </p>
+              </div>
             </div>
-            
+            <div>
+              <div class="row">
+                  <div class="col">
+                    <h2>Correlation between the # of licenses and gun crimes</h2>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col">
+                      <img class="img_results" src="WebVisualizations/Images/Crime_in_US/DataAnalysis_1.png">
+                      <p>On this graph we can appreciate that the countries with the largest number of licenses are not 
+                        necessarily the most violent. This is a consequence of stronger gun regulation laws like in New York 
+                        and California that also are the most populated states.
+                      </p>
+                      <p>After considering the deadliest type of incidents, we wanted to look at the same relationshp but 
+                          this time by only cosidering the numer of injured we can find in those moments. Unsurprisingly, 
+                          we noticed a bigger distribution in armed robberies. A reason that may explain this behavior 
+                          could be the purpose. According to some information, during robberies, perpetrators only want 
+                          to get away this other's belongins, not actually kille them (unless they do not have any other option), 
+                          which is contrary to what we can find in close relationships.
+                      </p>
+                  </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="row">
+                  <div class="col">
+                    <h2>Close-relationships Incidents are deadlier than those in which the victim(s) is/are unknown (like robberies).</h2>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-sm-12 col-md-6 col-lg-6">
+                      <img class="img_results" src="WebVisualizations/Images/Crime_in_US/DataAnalysis_2.png">
+                      <p>In order to answer this question, we need to focus on the key types of crime that 
+                        ocurr more often. Once we stablish that group, we then compare the distribution of 
+                        each one incidents according to the number of their victims they got (% lethality) 
+                        and plot their behaviour. If we concentrate in the first three categories (tallest 
+                        curves), we see that those are actually close-relationships, whereas the shortest 
+                        correspond to categories in which the victims could potentially not know the 
+                        perpetrator. We are assumming that in a robbery, typically the victm is randomly 
+                        chosen, otherwise it will be more likely that they end up in jail. The take-away 
+                        from this plot is that those conflicts that involve close-ones are more likely to 
+                        have more victims.
+                      </p>
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-6">
+                    <img class="img_results" src="WebVisualizations/Images/Crime_in_US/DataAnalysis_3.png">
+                    <p>After considering the deadliest type of incidents, we wanted to look at the same relationshp 
+                      but this time by only cosidering the numer of injured we can find in those moments. Unsurprisingly, 
+                      we noticed a bigger distribution in armed robberies. A reason that may explain this behavior could 
+                      be the purpose. According to some information, during robberies, perpetrators only want to get away 
+                      this other's belongins, not actually kille them (unless they do not have any other option), which 
+                      is contrary to what we can find in close relationships.
+                    </p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="row">
+                  <div class="col">
+                    <h2>Southern states (near Mexico) present higher deaths than other locations in US</h2>
+                  </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                  <img class="img_results" src="WebVisualizations/Images/Crime_in_US/DataAnalysis_4.png">
+                      <p>Here, we observe where those incidents happened in the US. At first sight, 
+                        there is concentration of violence in south east states, a zone that is not 
+                        really close to mexican border. As we are thinking that souternwest states 
+                        have more levels of violence, let's split the incidents in those fours cuadrants 
+                        and see the results.
+                      </p>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                  <img class="img_results" src="WebVisualizations/Images/Crime_in_US/DataAnalysis_5.png">
+                    <p>The results show something different from what we expected. According to the graph, 
+                      the deadliest zone in three years has been southeast and in second place comes northeast. 
+                      Referring to our hypothesis, we can say that the closer we get to Mexico does not 
+                      imply a hiher level of deaths in those states. At this point, we can remember that 
+                      states such as District of Columbia or Lussiana are among the top 5 more violent 
+                      states and they are situated in the southeast cuadrant, making more sense of the data.
+                    </p>
+                </div>
+              </div>
+            </div>
         </div>
     </body>
 </html>
